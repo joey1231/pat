@@ -28,5 +28,10 @@ class Job extends Model
 			'formattedLocationFull',
 			'formattedRelativeTime',
 			'source_api',
+			'company_logo',
+			'company_url',
+			'how_to_apply',
+			'type',
     ];
+    
 }
