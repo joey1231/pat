@@ -21,6 +21,7 @@ class Indeed{
 			$j = Job::where('jobkey',$job['jobkey'])->first();
 			if(!$j){
 				$j = new Job;
+				$j->source_api='indeed';
 				$j->fill($job);
 				$j->save();
 			}

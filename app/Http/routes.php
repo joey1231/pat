@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'web'],function(){
 	Route::group(['prefix'=>'admin'],function(){
-		Route::get('/indeed','Admin\IndeedController@index');	
+		Route::get('/indeed','Admin\IndeedController@index');
+		Route::get('/github','Admin\GithubController@index');	
 	});	
 });

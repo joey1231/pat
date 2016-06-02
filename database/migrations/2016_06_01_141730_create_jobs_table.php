@@ -31,9 +31,14 @@ class CreateJobsTable extends Migration
 			$table->text('sponsored')->nullable();
 			$table->text('expired')->nullable();
 			$table->text('indeedApply')->nullable();
+			
 			$table->text('formattedLocationFull')->nullable();
 			$table->text('formattedRelativeTime')->nullable();
 			$table->text('source_api')->nullable();
+			$table->text('type')->nullable();
+			$table->text('company_logo')->nullable();
+			$table->text('company_url')->nullable();
+			$table->text('how_to_apply')->nullable();
 			$table->timestamps();
 			
 		});
