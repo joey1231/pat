@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+	Route::get('/admin/','Admin\DashboardController@index');	
 Route::group(['middleware' => 'web'],function(){
 	Route::group(['prefix'=>'admin'],function(){
 		Route::get('/indeed','Admin\IndeedController@index');
-		Route::get('/github','Admin\GithubController@index');	
+		Route::get('/github','Admin\GithubController@index');
+		Route::get('/dashboard','Admin\DashboardController@index');		
 	});	
 });
